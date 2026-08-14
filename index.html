@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftWars — Sistema de Gestión de Eventos UCENFOTEC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="img/softwars-logo-light.png" alt="SoftWars" class="nav-logo">
+            <div class="nav-links">
+                <a href="#about">Proyecto</a>
+                <a href="#features">Módulos</a>
+                <a href="#tech">Tecnologías</a>
+                <a href="#team">Equipo</a>
+            </div>
+            <a href="https://github.com/apastranb/SoftWars" target="_blank" class="nav-btn">
+                <i class="bi bi-github"></i> Repositorio
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <span class="hero-badge">
+                <i class="bi bi-mortarboard-fill"></i> Proyecto Integrador 1 — C2 2026
+            </span>
+            <h1 class="hero-title">
+                Sistema de Gestión de<br>
+                <span class="gradient-text">Eventos UCENFOTEC</span>
+            </h1>
+            <p class="hero-subtitle">
+                Plataforma web para centralizar la planificación, inscripción y seguimiento de eventos académicos, culturales, tecnológicos y recreativos de la Universidad CENFOTEC.
+            </p>
+            <div class="hero-actions">
+                <a href="https://github.com/apastranb/SoftWars" target="_blank" class="btn-primary">
+                    <i class="bi bi-code-slash"></i> Ver código fuente
+                </a>
+                <a href="#about" class="btn-secondary">
+                    <i class="bi bi-arrow-down-circle"></i> Conocer más
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Módulos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">36</span>
+                    <span class="stat-label">Historias de usuario</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">42</span>
+                    <span class="stat-label">Casos de prueba</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Capas de arquitectura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Acerca del proyecto</span>
+                <h2 class="section-title">¿Qué es el Sistema de Gestión de Eventos?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="bi bi-bullseye"></i></div>
+                    <h3>Misión</h3>
+                    <p>Desarrollar soluciones de software robustas e innovadoras que transformen los procesos educativos mediante tecnología de vanguardia.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                    <h3>Visión</h3>
+                    <p>Ser reconocidos como un equipo ágil capaz de entregar sistemas escalables que impacten positivamente a la comunidad universitaria.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="bi bi-lightbulb"></i></div>
+                    <h3>Propósito</h3>
+                    <p>Centralizar la gestión y divulgación de eventos para que cualquier estudiante o visitante pueda consultar, inscribirse y participar en actividades de CENFOTEC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Funcionalidades</span>
+                <h2 class="section-title">Módulos del Sistema</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-calendar-event"></i></div>
+                    <h3>Eventos</h3>
+                    <p>Creación, edición y publicación de eventos con categorías, cupos y control de estado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-list-task"></i></div>
+                    <h3>Actividades</h3>
+                    <p>Subeventos vinculados con horarios, responsables y control automático de cupo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-mic"></i></div>
+                    <h3>Presentadores</h3>
+                    <p>Registro de oradores con especialidad, biografía y asignación a actividades.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shop-window"></i></div>
+                    <h3>Stands</h3>
+                    <p>Espacios de promoción con numeración anual automática y gestión de estado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-person-plus"></i></div>
+                    <h3>Inscripciones</h3>
+                    <p>Formulario público con validación de duplicados, conflictos de horario y cupo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+                    <h3>Administración</h3>
+                    <p>Panel protegido con sesión, bcrypt, auditoría y roles de usuario.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-stars"></i></div>
+                    <h3>Asistente IA</h3>
+                    <p>Generación de descripciones con Google Gemini integrado desde el servidor.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-cloud-upload"></i></div>
+                    <h3>Imágenes en la nube</h3>
+                    <p>Upload de portadas y fotos a Cloudinary con resize automático.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech" id="tech">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Stack tecnológico</span>
+                <h2 class="section-title">Tecnologías Utilizadas</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="bi bi-filetype-html"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-filetype-css"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-filetype-js"></i>
+                    <span>JavaScript ES Modules</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-bootstrap"></i>
+                    <span>Bootstrap 5</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-hdd-stack"></i>
+                    <span>Node.js + Express</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-database"></i>
+                    <span>MongoDB Atlas</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-cloud"></i>
+                    <span>Cloudinary</span>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-cpu"></i>
+                    <span>Google Gemini</span>
+                </div>
+            </div>
+            <div class="arch-diagram">
+                <div class="arch-layer arch-frontend">
+                    <span class="arch-label">Frontend</span>
+                    <span class="arch-desc">Controllers → Services → fetch()</span>
+                </div>
+                <div class="arch-arrow"><i class="bi bi-arrow-down-up"></i> HTTP / JSON</div>
+                <div class="arch-layer arch-backend">
+                    <span class="arch-label">Backend</span>
+                    <span class="arch-desc">Routes → Controllers → Services → MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Nuestro equipo</span>
+                <h2 class="section-title">Equipo SoftWars</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h3>Carlos Carballo</h3>
+                    <span class="team-role">Líder Técnico</span>
+                    <p>Diseño de arquitectura, estructura del backend, API de eventos y actividades, migración del frontend a ES modules y portal público.</p>
+                    <a href="mailto:ccarballov@ucenfotec.ac.cr" class="team-email">
+                        <i class="bi bi-envelope"></i> ccarballov@ucenfotec.ac.cr
+                    </a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h3>Josué Arroyo</h3>
+                    <span class="team-role">Coordinador</span>
+                    <p>Gestión del proyecto, API de oradores, stands y postulaciones, integración documental y asistente de IA con Gemini.</p>
+                    <a href="mailto:jarroyor@ucenfotec.ac.cr" class="team-email">
+                        <i class="bi bi-envelope"></i> jarroyor@ucenfotec.ac.cr
+                    </a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h3>Adonis Pastran</h3>
+                    <span class="team-role">Infraestructura</span>
+                    <p>Clúster MongoDB Atlas, conexión, índices, carga inicial de datos y layout responsive del panel administrativo.</p>
+                    <a href="mailto:apastranb@ucenfotec.ac.cr" class="team-email">
+                        <i class="bi bi-envelope"></i> apastranb@ucenfotec.ac.cr
+                    </a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h3>Kenner Gamboa</h3>
+                    <span class="team-role">Líder QA</span>
+                    <p>Autenticación con bcrypt, API de participantes e inscripciones, validaciones del servidor y plan de pruebas.</p>
+                    <a href="mailto:kgamboas@ucenfotec.ac.cr" class="team-email">
+                        <i class="bi bi-envelope"></i> kgamboas@ucenfotec.ac.cr
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="img/eventos-cenfotec-logo-light.png" alt="CENFOTEC" class="footer-logo">
+                <p>Proyecto Integrador 1 — Prof. Álvaro Cordero Peña</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/apastranb/SoftWars" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.ucenfotec.ac.cr" target="_blank"><i class="bi bi-globe"></i> CENFOTEC</a>
+            </div>
+            <p class="footer-copy">© 2026 Equipo SoftWars — Universidad CENFOTEC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
